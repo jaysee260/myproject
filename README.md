@@ -60,6 +60,7 @@ Directory structure
 |   - ./webpack.config.json
 |-
 ```
+-->
 
 <hr >
 
@@ -78,6 +79,8 @@ Directory structure
 - webpack-cli
 - webpack-dev-server
 - webpack-merge
+- chalk
+- morgan
 
 ## loaders and plugins to install
 
@@ -95,4 +98,3 @@ Directory structure
 - extract-text-webpack-plugin
 - html-webpack-plugin
 - uglifyjs-webpack-plugin
--->
