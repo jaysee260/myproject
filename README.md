@@ -17,11 +17,11 @@ The script `npm run server` is currently using `concurrently` to simultaneously 
 
 The goal is for the React Application to be served when the client reaches `/` (root) route, and for React-Router to handle any subsequent routing.
 
-
+<!--  
 ### Info about directories and subdirectories
 
 Directory structure
-```
+|   - ./server```
 |- ./myproject (root)
 |   - ./build-utils
 |     - ./common-paths.js
@@ -95,4 +95,4 @@ Directory structure
 - extract-text-webpack-plugin
 - html-webpack-plugin
 - uglifyjs-webpack-plugin
-
+-->
