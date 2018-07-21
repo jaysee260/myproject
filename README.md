@@ -13,7 +13,7 @@ Started setting up the infrastructure for a full stack, server side rendered app
 
 Still figuring out how to bring all the pieces together to achieve expected behavior.
 
-`npm run server` currently using `concurrently` to simultaneously run express server (on PORT 300) and webpack-dev-server (on PORT 9000). Playing with `proxy` property of devServer in webpack configurations but haven't fully achieved expected behavior yet.
+The script `npm run server` is currently using `concurrently` to simultaneously run express server (on PORT 300) and webpack-dev-server (on PORT 9000). Playing with `proxy` property of devServer in webpack configurations but haven't fully achieved expected behavior yet.
 
 The goal is for the React Application to be served when the client reaches `/` (root) route, and for React-Router to handle any subsequent routing.
 
