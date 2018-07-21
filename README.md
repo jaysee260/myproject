@@ -23,6 +23,10 @@ The goal is for the React Application to be served when the client reaches `/` (
 
 - react
 - react-dom
+- express
+- react-router-dom
+- history
+- bulma
 
 ## dev dependencies to install
 
