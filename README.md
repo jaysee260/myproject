@@ -81,6 +81,7 @@ Directory structure
 - webpack-merge
 - chalk
 - morgan
+- nodemon
 
 ## loaders and plugins to install
 
