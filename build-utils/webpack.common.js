@@ -14,6 +14,7 @@ const config = {
         // Use babel-loader on any .js
         // or .jsx file you come across
         test: /\.jsx?$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: "babel-loader"

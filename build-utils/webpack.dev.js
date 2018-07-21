@@ -1,5 +1,12 @@
 const config = {
+  mode: 'development',
   devtool: 'eval-source-map',
+  devServer: {
+    // proxy: {
+    //   '/': 'http://localhost:3000'
+    // },
+    historyApiFallback: true
+  },
   module: {
     rules: [
       {
@@ -10,7 +17,7 @@ const config = {
         ]
       },
       {
-        test: /\.scss/,
+        test: /\.(scss|sass)/,
         use: [
           "style-loader",
           "css-loader",

@@ -3,6 +3,7 @@ const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 
 module.exports = {
+  mode: 'production',
   devtool: "source-map",
   module: {
     rules: [
@@ -14,7 +15,7 @@ module.exports = {
         })
       },
       {
-        test: /\.scss/,
+        test: /\.(scss|sass)/,
         use: ExtractTextWebpackPlugin.extract({
           use: [
             {
