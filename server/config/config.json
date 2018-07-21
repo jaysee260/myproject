@@ -1,0 +1,17 @@
+{
+  "ENV": "development",
+  "PORT": "",
+  "DB": {
+    "name": "",
+    "uri": "",
+    "port": "",
+    "password": "",
+    "username": ""
+  },
+  "DEVELOPMENT": {
+    "port": 6060
+  },
+  "PRODUCTION": {
+    "port": 9000
+  }
+}
