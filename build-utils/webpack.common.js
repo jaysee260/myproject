@@ -11,6 +11,8 @@ const config = {
   module: {
     rules: [
       {
+        // Use babel-loader on any .js
+        // or .jsx file you come across
         test: /\.jsx?$/,
         use: [
           {
