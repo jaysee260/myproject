@@ -5,6 +5,7 @@ Recently (2 days ago) I realized that while I use webpack quite often, I do not 
 
 This project is the product of my experimentation with various webpack's feature and highly customizable configurations.
 
+Restructured directory structure.
 
 #### 07/21/2018
 
