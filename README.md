@@ -5,6 +5,17 @@ Recently (2 days ago) I realized that while I use webpack quite often, I do not 
 
 This project is the product of my experimentation with various webpack's feature and highly customizable configurations.
 
+
+#### 07/21/2018
+
+Started setting up the infrastructure for a full stack, server side rendered application using Express on the back-end and React, along with React-Router, on the front-end.
+
+Still figuring out how to bring all the pieces together to achieve expected behavior.
+
+`npm run server` currently using `concurrently` to simultaneously run express server (on PORT 300) and webpack-dev-server (on PORT 9000). Playing with `proxy` property of devServer in webpack configurations but haven't fully achieved expected behavior yet.
+
+The goal is for the React Application to be served when the client reaches `/` (root) route, and for React-Router to handle any subsequent routing.
+
 <hr >
 
 ## dependencies to install
