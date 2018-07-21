@@ -17,6 +17,50 @@ The script `npm run server` is currently using `concurrently` to simultaneously 
 
 The goal is for the React Application to be served when the client reaches `/` (root) route, and for React-Router to handle any subsequent routing.
 
+
+### Info about directories and subdirectories
+
+Directory structure
+```
+|- ./myproject (root)
+|   - ./build-utils
+|     - ./common-paths.js
+|     - ./webpack.common.js
+|     - ./webpack.dev.js
+|     - ./webpack.prod.js
+|   - ./client
+|     - ./src
+|       - ./components
+|         - ./Layout
+|           - ./footer
+|             -  ./Nav.js
+|           - ./header
+|             -  ./Footer.js
+|           - ./main
+|           - ./Layout.js
+|         - ./IndexPage.js
+|         - ./NotFoundPage.js
+|       - ./routing
+|         - ./history.js
+|         - ./routes.js
+|       - ./styles
+|         - ./index.css
+|         - ./index.scss
+|       - ./App.js
+|       - ./index.html
+|       - ./index.js
+|   - ./node_modules
+|   - ./server
+|     - ./server.js
+|   - ./.babelrc
+|   - ./gitignore
+|   - ./package-lock.json
+|   - ./package.json
+|   - ./README.md
+|   - ./webpack.config.json
+|-
+```
+
 <hr >
 
 ## dependencies to install

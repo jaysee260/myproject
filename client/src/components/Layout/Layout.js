@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Nav from './components/Layout/header/Nav';
-import Footer from './components/Layout/footer/Footer';
+import Nav from './header/Nav';
+import Footer from './footer/Footer';
 
 class Layout extends Component {
   render() {

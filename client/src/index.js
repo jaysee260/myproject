@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import 'bulma';
 import App from './App';
-import Layout from './Layout';
+import Layout from './components/Layout/Layout';
 
 const root = document.getElementById("root");
 
