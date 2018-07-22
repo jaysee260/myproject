@@ -14,7 +14,7 @@ module.exports = (env = '') => {
 
     // If in development, connect to local Mongo
     if (env === 'development') {
-      keys = require('../config/').init().DB[env];
+      keys = require('../config').init().DB[env];
       dbUri = keys.url.replace('<port>', keys.port)
                       .replace('<name>', keys.name);
     }
