@@ -40,7 +40,15 @@ const config = {
       template: commonPaths.templatePath
       //minify: {}
     })
-  ]
+  ],
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+    alias: {
+      client: commonPaths.clientPath,
+      server: commonPaths.serverPath,
+      config: commonPaths.configPath
+    }
+  }
 }
 
 module.exports = config;
