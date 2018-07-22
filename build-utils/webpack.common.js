@@ -3,9 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 const config = {
-  entry: commonPaths.appEntry,
+  entry: {
+    app: commonPaths.appEntry
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: commonPaths.outputPath
   },
   module: {
