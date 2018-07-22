@@ -4,7 +4,7 @@ const { g, y, r } = require('./console');
 
 // Declare global variables
 const ENV = process.env.NODE_ENV || config.ENV || 'development';
-const PORT = config.PORT || process.env.PORT || 3000;
+const PORT = process.env.PORT || config.PORT || 3000;
 
 // Import dependencies
 const express = require('express');
