@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "dev:client": "npm run webpack-dev-server -- --env.env=dev",
-    "dev:server": "nodemon ./server/server.js",
+    "dev:server": "NODE_ENV=development nodemon ./server",
     "dev:all": "concurrently \"npm run dev:server\" \"npm run dev:client\" ",
     "build": "npm run webpack -- --env.env=prod",
     "webpack-dev-server": "webpack-dev-server --port=9000 --hot",
@@ -42,6 +42,7 @@
     "bulma": "^0.7.1",
     "express": "^4.16.3",
     "history": "^4.7.2",
+    "mongoose": "^5.2.4",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1"
