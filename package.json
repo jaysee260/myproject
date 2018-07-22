@@ -9,7 +9,7 @@
     "dev:all": "concurrently \"npm run dev:server\" \"npm run dev:client\" ",
     "build": "npm run webpack -- --env.env=prod",
     "webpack-dev-server": "webpack-dev-server --port=9000 --hot",
-    "webpack": "node ./node_modules/webpack/bin/webpack.js"
+    "webpack": "NODE_ENV=production node ./node_modules/webpack/bin/webpack.js"
   },
   "keywords": [],
   "author": "Juan Carlos Gonzalez",
