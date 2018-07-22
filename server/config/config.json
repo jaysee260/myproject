@@ -2,11 +2,20 @@
   "ENV": "development",
   "PORT": "",
   "DB": {
-    "name": "",
-    "uri": "",
-    "port": "",
-    "password": "",
-    "username": ""
+    "development": {
+      "url": "mongodb://localhost:<port>/<name>",
+      "name": "myproject",
+      "port": "27017",
+      "password": "",
+      "username": ""
+    },
+    "production": {
+      "url": "mongodb://<username>:<password>@ds143511.mlab.com:43511/<name>",
+      "name": "mycloudproject",
+      "port": "",
+      "password": "opensesame3927",
+      "username": "superuser"
+    }
   },
   "DEVELOPMENT": {
     "port": 6060

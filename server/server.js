@@ -12,6 +12,9 @@ if (ENV === 'development') {
   app.use(logger('dev'));
 }
 
+// Initialize DB Connection
+require('./db')(ENV);
+
 app.get('/webpack', (req, res) => {
   res.send('hello from express.js');
 });
@@ -21,5 +24,5 @@ app.get('/*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(y(`Server running on port ${PORT}`));
+  console.log(y(`:: Server running on port ${PORT} ::`));
 });
