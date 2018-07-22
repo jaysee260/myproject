@@ -72,6 +72,7 @@ Directory structure
 - react-router-dom
 - history
 - bulma
+- mongoose
 
 ## dev dependencies to install
 
