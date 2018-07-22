@@ -17,6 +17,12 @@ The script `npm run server` is currently using `concurrently` to simultaneously 
 
 The goal is for the React Application to be served when the client reaches `/` (root) route, and for React-Router to handle any subsequent routing.
 
+#### 07/22/2018
+
+Added logic to connect to database. Nature of connection is based on value of `NODE_ENV`. For instance:
+
+`NOVE_ENV=production` will open connection to DB in cloud (via mLab). `NODE_ENV=development` will open connection to local MongoDB. If `NODE_ENV` is set to `"development"`, be sure to run the `mongod` command in your terminal before starting the server.
+
 <!--  
 ### Info about directories and subdirectories
 
