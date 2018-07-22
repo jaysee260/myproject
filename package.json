@@ -4,11 +4,15 @@
   "description": "",
   "main": "./src/index.js",
   "scripts": {
+    "start": "npm run build && npm run prod:server",
+
     "dev:client": "npm run webpack-dev-server -- --env.env=dev",
     "dev:server": "NODE_ENV=development nodemon ./server",
     "dev:all": "concurrently \"npm run dev:server\" \"npm run dev:client\" ",
-    "build": "npm run webpack -- --env.env=prod",
     "webpack-dev-server": "webpack-dev-server --port=9000 --hot",
+
+    "prod:server": "NODE_ENV=production PORT=9000 nodemon ./server",
+    "build": "npm run webpack -- --env.env=prod",
     "webpack": "NODE_ENV=production node ./node_modules/webpack/bin/webpack.js"
   },
   "keywords": [],
