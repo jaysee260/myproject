@@ -17,7 +17,8 @@ if (ENV === 'development') {
   app.use(logger('dev'));
 }
 
-// Initialize DB Connection
+// Initialize DB Connection;
+// Pass it ENV variable.
 require('./db')(ENV);
 
 

@@ -5,7 +5,7 @@ const { g, r } = require('../console');
 module.exports = (env = '') => {
   // enable the use of Promises
   mongoose.Promise = global.Promise;
-
+  
   // If environment is undefined,
   // throw an "invalid URI" error.
   if (env !== '') {
@@ -36,7 +36,7 @@ module.exports = (env = '') => {
     // If an error occurs whilst attempting to connect to db,
     // throw an error with a message.
     db.on('error', () => {
-      let err_msg = ":: An error occurred while attempting to connect to the database. Please make sure that the URI is valid ::";
+      let err_msg = `:: An error occurred while attempting to connect to the database. Please make sure that the URI is valid ::`;
       throw new Error(r(err_msg));
     });
 
